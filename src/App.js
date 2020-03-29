@@ -3,13 +3,22 @@ import './App.css';
 import Hero from "./components/Hero.js"
 import JobCard from "./components/JobCard.js"
 import MediumHero from "./components/MediumHero.js"
+import WorkTimeline from "./components/WorkTimeline.js"
+
+
+// Constants
 import { fullName,currentJob, appleJobObj, microsoftJobObj, gradJobObj, capOneJobObj, sasJobObj, dzoneJobObj } from './constants.js';
-import apple from "./images/apple.jpg"
-import microsoft from "./images/microsoft.png"
-import unc from "./images/unc.jpeg"
-import c1 from "./images/capOne.jpg"
-import sas from "./images/sas.jpg"
-import dzone from "./images/dzone.jpg"
+
+// Images
+// import apple from "./images/apple.jpg"
+// import microsoft from "./images/microsoft.png"
+// import unc from "./images/unc.png"
+// import c1 from "./images/capOne.jpg"
+// import sas from "./images/sas.jpg"
+// import dzone from "./images/dzone.jpg"
+
+
+
 function App() {
   return (
     <div>
@@ -17,8 +26,9 @@ function App() {
     <Hero name={fullName} currentJob={currentJob} />
     {/* Experience hero bar */}
     <MediumHero title={"Experience"}/>
+    <WorkTimeline />
     {/* Column of cards of experience */}
-    <div className="columns is-multiline is-dark-background">
+    {/* <div className="columns is-multiline is-dark-background">
       <div className="column is-one-fifth is-narrow"></div>
       <div className="column" id="column1">
         <JobCard 
@@ -84,7 +94,7 @@ function App() {
         </div>
         <div className="column is-one-fifth is-narrow"></div>     
 
-    </div>
+    </div> */}
     <MediumHero title="Personal Projects"/>
     </div>
     

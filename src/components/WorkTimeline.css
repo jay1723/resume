@@ -1,0 +1,36 @@
+/* From https://github.com/stephane-monnot/resume/blob/ef692d66ef2f1915ec6aa160da38acdfcdc9f46d/src/components/ResumeProjectsBlock/ResumeProjectsBlock.css */
+
+.WorkTimeline {
+}
+
+.WorkTimeline-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.WorkTimelineBlock-technologies > * {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.WorkTimelineBlock-technologies > * > * {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.WorkTimelineBlock-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.WorkTimelineBlock-links > * {
+    margin-right: 10px !important;
+}
+
+@media only screen and (max-width: 480px) {
+    .ResumeProjectsBlock-links > * {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
