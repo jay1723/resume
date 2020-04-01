@@ -64,3 +64,91 @@ export const dzoneJobObj = {
     jobLocation: "Cary, NC",
     chips: ["Spring", "Java", "Selenium Web Driver"] 
 }
+
+
+// Education
+export const uncUndergrad = {
+    companyName: "University of North Carolina - Chapel Hill",
+    jobTitle: "B.S. Computer Science",
+    jobContent: "Completed B.S. in Computer Science in 3 years and was accepted into the accelerated MS/BS Computer Science Masters program within the CS department.",
+    startDate: "August 2015",
+    endDate: "May 2018",
+    jobLocation: "Chapel Hill, NC",
+    chips: [],
+    coursework: [ "Data Structures"," Computer Architecture", "Digital Logic and Design", "Programming Languages and Concepts", "Bioalgorithms", "Internet Services and Protocols", "Discrete Structures", "Algorithms", "Automata", "Databases"]
+}
+
+export const uncGrad = {
+    companyName: "University of North Carolina - Chapel Hill",
+    jobTitle: "M.S. Computer Science",
+    jobContent: "Completed M.S. in Computer Science in 1.5 years as a part of the MS/BS Computer Science Masters program within the CS department. Worked as a research assistant for Leonard McMillan in the Computational Genetics lab working on novel data-structures to store and analyze DNA/RNA sequences. Completed a tangentially related writing requirement for the masters program where I propose an extension to a commonly used genetic file format and provide a lightweight parser in Python. This file format was one I developed in the course of my main research work.",
+    startDate: "August 2018",
+    endDate: "December 2019",
+    jobLocation: "Chapel Hill, NC",
+    repo: "https://github.com/jay1723/fastannotation",
+    whitepaper: "https://github.com/jay1723/fastannotation/blob/master/Jay_FastAnnotation.pdf",
+    coursework: ["Operating Systems", "Mobile Computing Systems", "Machine Learning", "Data Compression", "Robotics", "Software Engineering Lab"]
+}
+
+// Font constants
+
+export const font = { 
+    color: "#F0F2F7"
+}
+
+// Personal Projects
+
+
+// export const template = {
+//     title: "",
+//     subtitle: "",
+//     content:
+// }
+
+export const graphicalGenome = {
+    title: "Graphical Genome",
+    subtitle: "Collaborative Cross Graphical Genome",
+    content: "Worked in an inter-disciplinary team comprised of the Genetics department and the Computer Science department at UNC Chapel Hill in the construction of a Directed Graph representation of a genome. I was responsible for the API and the underlying code behind the theory developed by the Genetics department. Paper forthcoming...",
+    repo: "https://github.com/jay1723/GraphicalGenome",
+    chips: ["python"]
+}
+
+export const fastannotation = {
+    title: "FASTAnnotation",
+    subtitle: "A generalized FASTA file format parser",
+    content: "Built during the development of the Graphical Genome API in Leonard McMillan's lab at UNC. Defines an extension of the commonly used FASTA genetic file format that uses JSON to extend header lines within the file to provide the ability to add and remove annotations to specific portions of the genetic code stored in the file. I provide a simple Python wrapper that provides a parser and annotation creation/deletion functionality that is backwards compatible with existing FASTA parsers and file formats to allow for a seamless transition to the new format. Whitepaper available in the GitHub repository.",
+    repo: "https://github.com/jay1723/fastannotation",
+    chips:["python"]
+}
+
+export const rrt = {
+    title: "RRT Path Planning Simulation",
+    subtitle: "RRT path planning for a holonomic point robot",
+    content: "Built a simulation of the commonly used RRT path planning algorithm using PyGame and python for a Robotics class. Added ability to add obstacles and define start and end positions within the board. Robot is defined as an infinitely small point robot so it does not require complex collision checks but is a good abstraction for even simple real world robots.",
+    repo: "https://github.com/jay1723/RRT-Simulation",
+    chips: ["python", "PyGame"]
+}
+
+export const resume = {
+    title: "Personal Site",
+    subtitle: "Personal portfolio website",
+    content: "Built my personal portfolio using React (as an excuse to learn React). Used an open source vertical-timeline component for the experience and education sections of the site. Used Bulma.io for the styling for the website as well as its tile layout cards for the personal project section of the site. The scaffolding for the site was built using create-react-app ",
+    repo: "https://github.com/jay1723/resume",
+    chips: ["ReactJS", "Bulma.io", "CSS", "HTML"]
+}
+
+export const prerequisite = {
+    title: "UNC CS Prerequisite Viewer",
+    subtitle: "Visualize your path through the CS curriculum at UNC Chapel Hill",
+    content: "Worked in a team of 4 as a part of the Software Engineering Lab class at UNC. Developed a way for students to visualize their path through the complicated CS curriculum. I was responsible for the backend API creation and route management and handled all of the data ingestion and retrieval for users who created profiles. App was not deployed but is fully functional in the local state.",
+    repo: "https://github.com/jay1723/prerequisite-viewer-backend",
+    chips: ["JavaScript", "JQuery"]
+}
+
+export const googlecalendar = {
+    title: "Google Calendar Alarm Clock",
+    subtitle: "Programmable alarm system using Google Calendar",
+    content: "Worked in assitive technologies advised by Gary Bishop. Worked to create a Google Calendar alarm clock system that used specific trigger words to help a student with Autism go through is morning routine. When paired with a bluetooth speaker this alarm system can play custom MP3's at set intervals triggered by keyword phrases used in each calendar event. The project was deployed in the student's house at the end of the semester.",
+    repo: "https://github.com/jay1723/GoogleCalendarAlarm",
+    chips: ["python", "Google Calendar API"]
+}
