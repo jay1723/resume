@@ -15,9 +15,9 @@ function PersonalProject(props){
     return (
         <div style={style}>
             <div className="columns">
-                <div className="column is-one-fifth"></div>
+                {/* <div className="column is-one-fifth"></div> */}
                 <div className="column">
-                <div class="tile is-ancestor">
+                <div class="tile is-ancestor" style={{marginLeft: "10%", marginRight: "10%"}}>
                     <div class = "tile is-vertical">
                     <PersonalProjectTileWithButtons project={graphicalGenome} />
                     <PersonalProjectTileWithButtons project={fastannotation} />
@@ -32,7 +32,7 @@ function PersonalProject(props){
                     </div>
                     </div>
                 </div>
-                <div className="column is-one-fifth"></div>
+                {/* <div className="column is-one-fifth"></div> */}
             </div>
         </div>
     )
