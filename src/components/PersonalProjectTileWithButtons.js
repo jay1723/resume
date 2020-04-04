@@ -10,7 +10,7 @@ const cardStyle={
 }
 
 function PersonalProjectTileWithButtons(props){
-    let chips = props.project.chips.map(chip => <Chip p={100} color={"primary"} label={chip} />)
+    let chips = props.project.chips.map(chip => <Chip p={100} color={"primary"} label={chip} style={{marginRight: "5px", marginBottom: "7px"}} />)
     return (
         <div class="tile is-parent">
             <article class="tile is-child notification" style={cardStyle}>
