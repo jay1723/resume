@@ -5,7 +5,7 @@ import {font} from "../constants.js"
 
 
 function TimelineElement(props){
-    let chips = props.job.chips.map(chip => <Chip label={chip} />)
+    let chips = props.job.chips.map(chip => <Chip label={chip} className=""/>)
     return (
         <VerticalTimelineElement
         contentStyle={{backgroundColor: "#08090F", color: "#F0F2F7", borderStyle: "solid", borderWidth: "1px", borderColor: "#32343F"}}

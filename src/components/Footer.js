@@ -1,7 +1,7 @@
 import React from "react"
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import Icon from '@material-ui/core/Icon'
+import EmailIcon from '@material-ui/icons/Email';
 import IconButton from '@material-ui/core/IconButton';
 
 function Footer(props){
@@ -15,6 +15,10 @@ function Footer(props){
 
                 <IconButton href={"https://www.linkedin.com/in/jay-rao/"}>
                     <LinkedInIcon color={"primary"} style={{fontSize: "48px"}} />
+                </IconButton>
+                    
+                <IconButton href={"mailto:jay1723@gmail.com"} >
+                    <EmailIcon color={"primary"} style={{fontSize: "45px"}} />
                 </IconButton>
             </div>
             
