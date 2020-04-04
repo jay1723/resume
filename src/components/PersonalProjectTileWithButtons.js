@@ -1,6 +1,7 @@
 import React from "react"
 import Chip from '@material-ui/core/Chip';
 import { spacing } from '@material-ui/system';
+import "./PersonalProjectTileWithButtons.css"
 
 
 const cardStyle={
@@ -12,14 +13,14 @@ const cardStyle={
 function PersonalProjectTileWithButtons(props){
     let chips = props.project.chips.map(chip => <Chip p={100} color={"primary"} label={chip} style={{marginRight: "5px", marginBottom: "7px"}} />)
     return (
-        <div class="tile is-parent">
-            <article class="tile is-child notification" style={cardStyle}>
-            <div class="content">
+        <div className="tile is-parent">
+            <article className="tile is-child notification shadow" style={cardStyle}>
+            <div className="content">
                 {chips}
                 <br></br>
-                <p class="title">{props.project.title}</p>
-                <p class="subtitle">{props.project.subtitle}</p>
-                <div class="content">
+                <p className="title">{props.project.title}</p>
+                <p className="subtitle">{props.project.subtitle}</p>
+                <div className="content">
                     {props.project.content}
                 </div>
             </div>
