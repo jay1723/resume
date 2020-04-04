@@ -5,7 +5,7 @@ function EducationTimelineElement(props){
     return (
         <VerticalTimelineElement
         contentStyle={{backgroundColor: "#08090F", color: "#F0F2F7", borderStyle: "solid", borderWidth: "1px", borderColor: "#32343F"}}
-        contentArrowStyle={{ borderRight: `7px solid  ${props.theme.style.background}` }}
+            contentArrowStyle={{ borderRight: `7px solid #F0F2F7` }}
         date={`${props.job.startDate} - ${props.job.endDate}`}
         iconStyle={{ background: props.theme.style.circleColor, color: '#fff', display: "flex",
         justifyContent: "center",

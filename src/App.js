@@ -30,6 +30,14 @@ const personalProjectStyle= {
   marginBottom: "25px"
 }
 
+const textstyle={
+  color: "#F0F2F7"
+}
+
+const footerstyle = {
+  backgroundColor: "#12100e"
+}
+
 function App() {
   return (
     <div>
@@ -38,14 +46,12 @@ function App() {
     {/* Experience hero bar */}
     <MediumHero title={"Experience"} style={herostyle}/>
       <WorkTimeline />
-      <MediumHero title="Personal Projects" style={educationStyle}/>
+    <MediumHero title="Personal Projects" style={educationStyle}/>
       <PersonalProject style={personalProjectStyle}/>
       <MediumHero style={educationStyle} />
     <MediumHero title="Education" style={herostyle}/>
-      <EducationTimeline />
-    
-    
-    <Footer style={educationStyle}/>
+      <EducationTimeline /> 
+    <Footer style={footerstyle} textstyle={textstyle}/>
     </div>
     
   );

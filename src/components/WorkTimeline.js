@@ -1,10 +1,11 @@
 
 import React from "react"
-import { VerticalTimeline }  from 'react-vertical-timeline-component';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import TimelineElement from "./TimelineElement"
 import 'react-vertical-timeline-component/style.min.css';
 import theme from "../theme.js";
-import { fullName,currentJob, appleJobObj, microsoftJobObj, gradJobObj, capOneJobObj, sasJobObj, dzoneJobObj } from '../constants';
+import { appleJobObj, microsoftJobObj, gradJobObj, capOneJobObj, sasJobObj, dzoneJobObj } from '../constants';
+import StarIcon from '@material-ui/icons/Star';
 
 const backgroundstyle = {
     backgroundColor: "#202334"
@@ -19,6 +20,10 @@ function WorkTimeline(props){
         <TimelineElement theme={theme.capone} job={capOneJobObj} />
         <TimelineElement theme={theme.sas} job={sasJobObj} />
         <TimelineElement theme={theme.dzone} job={dzoneJobObj} />
+        <VerticalTimelineElement
+                    iconStyle={{ background: '#202334', color: '#fff' }}
+            icon={<StarIcon />}
+        />
     </VerticalTimeline>
     </div>
     )
