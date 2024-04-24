@@ -47,6 +47,6 @@
   "homepage": "http://jay1723.github.io/resume",
   "devDependencies": {
     "@svgr/cli": "^5.3.0",
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^5.0.0"
   }
 }
